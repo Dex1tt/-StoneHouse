@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoneHouse — строительство загородных домов премиум-класса под ключ</title>
+    <meta name="description" content="Проектируем и строим загородные дома премиум-класса под ключ в Московской области. 15 лет на рынке, фиксированная смета, гарантия 10 лет.">
+    <meta property="og:title" content="StoneHouse — строительство домов премиум-класса">
+    <meta property="og:description" content="Проектируем и строим загородные дома под ключ. Гарантия 10 лет, фиксированная смета.">
+    <meta property="og:image" content="https://dex1tt.github.io/putanie-nazvanie/preview.jpg">
+    <meta property="og:type" content="website">   
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar__logo">
+        <p>StoneHouse</p>
+    </div>
+
+    <button class="navbar__burger" id="burgerBtn" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="navbar__menu" id="navbarMenu">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#process">Процесс работы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+    </ul>
+    <div class="navbar__contacts">
+        <a href="tel:+7 (900) 123-45-67" class="navbar__phone">+7 (900) 123-45-67</a>
+        <a href="#contacts" class="navbar__text">Связаться с нами</a>
+    </div>
+    <div class="navbar__overlay" id="navbarOverlay"></div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-title">
+            <div class="hero-badge">Премиум-строительство с 2011 года</div>
+            <h1>Загородные дома премиум-класса под ключ</h1>
+            <p>Проектируем и строим дома, в которых хочется жить десятилетиями.
+            От фундамента до финальной уборки — полный цикл, без подрядчиков со стороны</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Рассчитать стоимость дома</button>
+                <button class="btn-secondary">Смотреть портфолио</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <section class="advantages reveal">
+        <h2 class="advantages__heading">Преимущества нашей компании</h2>
+        <div class="advantages__content">
+            <div class="advantages__grid">
+                <div class="advantage-card">
+                    <div class="advantage-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </div>
+                    <div class="advantage-card__stat">
+                        <span class="advantage-card__number">15+</span>
+                        <span class="advantage-card__suffix">лет</span>
+                    </div>
+                    <h3>На рынке</h3>
+                    <p>Построили более 120 домов в Московской области</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                    </div>
+                    <div class="advantage-card__stat">
+                        <span class="advantage-card__number">10</span>
+                        <span class="advantage-card__suffix">лет</span>
+                    </div>
+                    <h3>Гарантия</h3>
+                    <p>Отвечаем за конструктив дома письменным договором</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+                        </svg>
+                    </div>
+                    <h3>Свой архитектор</h3>
+                    <p>Проект разрабатываем внутри компании, без переплаты за подрядчиков</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        </svg>
+                    </div>
+                    <h3>Фиксированная смета</h3>
+                    <p>Цена не меняется после подписания договора</p>
+                </div>
+            </div>
+
+            <div class="advantages__photo">
+                <img src="fasade.jpg" alt="Дом StoneHouse" style="pointer-events: none;">
+                <div class="advantages__badge">
+                    <span class="advantages__badge-number">15+</span>
+                    <span>лет на рынке строительства</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services reveal" id="services">
+        <h2 class="services__heading">Услуги</h2>
+        <div class="services-grid">
+            <div class="services__card">
+                <span class="services__number">01</span>
+                <h3>Строительство под ключ</h3>
+                <p>От проекта до сдачи дома с отделкой и коммуникациями</p>
+            </div>
+            <div class="services__card">
+                <span class="services__number">02</span>
+                <h3>Возведение коробки</h3>
+                <p>Фундамент, стены, кровля — для тех, кто хочет вести отделку самостоятельно</p>
+            </div>
+            <div class="services__card">
+                <span class="services__number">03</span>
+                <h3>Архитектурное проектирование</h3>
+                <p>Индивидуальный проект с учётом рельефа участка и ваших пожеланий</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__heading reveal">Портфолио</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio__card reveal reveal-delay-1">
+                <h3>Шале 220 м²</h3>
+                <img src="home1.jpeg" style="pointer-events: none;" alt="Шале, площадь дома 220 квадратных метров">
+            </div>
+            <div class="portfolio__card reveal reveal-delay-2">
+                <h3>Минималистичный особняк, 340 м²</h3>
+                <img class="mansion" src="home2.jpg" style="pointer-events: none;" alt="Минималистичный особняк">
+            </div>
+            <div class="portfolio__card reveal reveal-delay-3">
+                <h3>Классический коттедж, 180 м²</h3>
+                <img class="cottage" src="home3.jpg" style="pointer-events: none;" alt="Классический коттедж">
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="process">
+        <h2 class="process__heading reveal">Процесс работы</h2>
+        <div class="process-grid">
+            <ol class="steps">
+                <li class="step reveal reveal-delay-1">
+                    <div class="step__number">1</div>
+                    <h3 class="step__title">Заявка и замер участка</h3>
+                    <p class="step__text">Выезжаем на объект в течение 2 дней</p>
+                </li>
+                <li class="step reveal reveal-delay-2">
+                    <div class="step__number">2</div>
+                    <h3 class="step__title">Проектирование</h3>
+                    <p class="step__text">Согласовываем архитектуру и смету</p>
+                </li>
+                <li class="step reveal reveal-delay-3">
+                    <div class="step__number">3</div>
+                    <h3 class="step__title">Договор и старт работ</h3>
+                    <p class="step__text">Фиксируем сроки и стоимость</p>
+                </li>
+                <li class="step reveal reveal-delay-4">
+                    <div class="step__number">4</div>
+                    <h3 class="step__title">Строительство</h3>
+                    <p class="step__text">Еженедельные отчёты с фото хода работ</p>
+                </li>
+                <li class="step reveal reveal-delay-5">
+                    <div class="step__number">5</div>
+                    <h3 class="step__title">Сдача дома</h3>
+                    <p class="step__text">Передаём ключи и документы, гарантийный талон</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="statistic">
+    <h2 class="statistic__heading reveal">Статистика</h2>
+    <div class="statistic-grid">
+        <div class="statistic__card reveal reveal-delay-1" data-decor="120">
+            <h3 class="statistic__value" data-target="120" data-suffix="+">0</h3>
+            <p class="statistic__text">домов построено</p>
+        </div>
+        <div class="statistic__card reveal reveal-delay-2" data-decor="15">
+            <h3 class="statistic__value" data-target="15" data-suffix="+">0</h3>
+            <p class="statistic__text">лет на рынке</p>
+        </div>
+        <div class="statistic__card reveal reveal-delay-3" data-decor="98">
+            <h3 class="statistic__value" data-target="98" data-suffix="%">0</h3>
+            <p class="statistic__text">клиентов рекомендуют нас</p>
+        </div>
+        <div class="statistic__card reveal reveal-delay-4" data-decor="10">
+            <h3 class="statistic__value" data-target="10" data-suffix="+">0</h3>
+            <p class="statistic__text">лет гарантии</p>
+        </div>
+    </div>
+</section>
+
+    <section class="reviews">
+        <h2 class="reviews__heading reveal">Отзывы</h2>
+        <div class="reviews-grid">
+            <blockquote class="reviews__card reveal reveal-delay-1">
+                <div class="reviews__header">
+                    <img class="reviews__avatar" src="avatar.avif" alt="Аватар">
+                    <cite class="reviews__author">Андрей М.</cite>
+                </div>
+                <p class="reviews__text">
+                    Строили дом полтора года назад — до сих пор без единой претензии. Отдельное спасибо за то, что уложились в срок.
+                </p>
+            </blockquote>
+            <blockquote class="reviews__card reveal reveal-delay-2">
+                <div class="reviews__header">
+                    <img class="reviews__avatar" src="avatar.avif" alt="Аватар">
+                    <cite class="reviews__author">Ирина С.</cite>
+                </div>
+                <p class="reviews__text">
+                    Ценю, что не было скрытых доплат — смета от начала и до конца совпала с договором.
+                </p>
+            </blockquote>
+            <blockquote class="reviews__card reveal reveal-delay-3">
+                <div class="reviews__header">
+                    <img class="reviews__avatar" src="avatar.avif" alt="Аватар">
+                    <cite class="reviews__author">Дмитрий К.</cite>
+                </div>
+                <p class="reviews__text">
+                    Выбирали компанию долго, сравнивали смету у пяти застройщиков — у StoneHouse она оказалась единственной, где цифры не поменялись в процессе стройки. Для меня это было решающим.
+                </p>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="contacts reveal" id="contacts">
+    <h2 class="contacts__heading">Контакты</h2>
+    <div class="contacts-grid">
+        <h3 class="contacts__title">Обсудим ваш проект</h3>
+        <p class="contacts__t">Оставьте заявку — перезвоним в течение часа и рассчитаем предварительную стоимость</p>
+        
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" id="nameInput" placeholder="Ваше имя">
+                <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phoneInput" placeholder="Телефон">
+                <span class="form-error" id="phoneError"></span>
+            </div>
+            <button type="submit">Отправить заявку</button>
+        </form>
+
+        <div class="contacts__success" id="successMessage">
+            ✓ Спасибо! Заявка отправлена, мы свяжемся с вами в течение часа.
+        </div>
+
+        <p class="contacts__policy">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__wrapper">
+        
+        <div class="footer__brand">
+            <h3>StoneHouse</h3>
+            <p>Строим дома вашей мечты с 2011 года</p>
+        </div>
+
+        <div class="footer__contacts">
+            <div class="footer__item">
+                <span class="footer__label">Адрес</span>
+                <span class="footer__value">Москва, ул. Строителей, 12</span>
+            </div>
+            <div class="footer__item">
+                <span class="footer__label">Телефон</span>
+                <span class="footer__value">+7 (900) 123-45-67</span>
+            </div>
+            <div class="footer__item">
+                <span class="footer__label">Email</span>
+                <span class="footer__value">info@stonehouse.ru</span>
+            </div>
+            <div class="footer__item">
+                <span class="footer__label">Режим работы</span>
+                <span class="footer__value">Пн-Пт: 9:00–19:00</span>
+            </div>
+        </div>
+
+        <div class="footer__nav">
+            <a href="#services">Услуги</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#process">Процесс работы</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+
+    </div>
+
+    <div class="footer__bottom">
+        <p>© 2026 StoneHouse. Все права защищены.</p>
+    </div>
+</footer>
+<button class="scroll-top" id="scrollTopBtn" aria-label="Наверх">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
